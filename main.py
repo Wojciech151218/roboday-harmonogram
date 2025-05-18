@@ -5,14 +5,22 @@ from datetime import datetime
 def read_schedule_data(csv_file):
     with open(csv_file, 'r', encoding='utf-8') as f:
         reader = csv.reader(f)
-        headers = next(reader)  # Get headers
+        next(reader)  # Skip the first row
+        headers = next(reader)  # Get headers from second row
         next(reader)  # Skip the "opcjonalne" row
         schools = []
         for row in reader:
             if row[0] and row[0] != "poza szkolni":  # Skip empty rows and "poza szkolni"
+                # Filter out events marked with 'x' and empty fields, create pairs of (event, time)
+                scheduled_events = []
+                for header, time in zip(headers[1:], row[1:]):
+                    # Only include events that are scheduled and have both header and time
+                    if header and time and time != 'x':  # Check if header is not empty
+                        scheduled_events.append((header, time))
+                
                 schools.append({
                     'name': row[0],
-                    'schedule': row[1:]
+                    'schedule': scheduled_events
                 })
     return headers, schools
 
@@ -37,14 +45,13 @@ def generate_latex_document(school_name, schedule, headers):
     doc.append(r'\begin{center}')
     doc.append(r'\begin{tabular}{|l|l|}')
     doc.append(r'\hline')
-    doc.append(r'\textbf{Godzina} & \textbf{Wydarzenie} \\')
+    doc.append(r'\textbf{Wydarzenie} & \textbf{Godzina} \\')
     doc.append(r'\hline')
     
     # Add schedule entries
-    for i, (header, time) in enumerate(zip(headers[1:], schedule)):
-        if time and time != 'x':  # Only add non-empty entries
-            doc.append(f'{time} & {header} \\\\')
-            doc.append(r'\hline')
+    for event, time in schedule:
+        doc.append(f'{event} & {time} \\\\')
+        doc.append(r'\hline')
     
     doc.append(r'\end{tabular}')
     doc.append(r'\end{center}')
@@ -58,7 +65,7 @@ def main():
         os.makedirs('output')
     
     # Read schedule data
-    headers, schools = read_schedule_data('Roboday_Logistyka - Arkusz1.csv')
+    headers, schools = read_schedule_data('roboday.csv')
     
     # Generate LaTeX document for each school
     for school in schools:

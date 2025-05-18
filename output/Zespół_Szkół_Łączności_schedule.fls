@@ -1,0 +1,68 @@
+PWD c:\Users\wojciech\cursor\rd\output
+INPUT C:\Users\wojciech\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\wojciech\cursor\rd\output\Zespół_Szkół_Łączności_schedule.tex
+OUTPUT Zespół_Szkół_Łączności_schedule.log
+INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
+INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
+INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Program Files\MiKTeX\tex\latex\base\inputenc.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\base\inputenc.sty
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\tex\latex\polski\polski.sty
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\tex\latex\polski\polski.sty
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\tex\latex\polski\ot4cmr.fd
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\tex\latex\polski\ot4cmr.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\base\ot4enc.def
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\tex\latex\polski\ot4cmr.fd
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\fonts\tfm\public\pl\plr10.tfm
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT .\Zespół_Szkół_Łączności_schedule.aux
+INPUT .\Zespół_Szkół_Łączności_schedule.aux
+INPUT Zespół_Szkół_Łączności_schedule.aux
+OUTPUT Zespół_Szkół_Łączności_schedule.aux
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\fonts\tfm\public\pl\plr12.tfm
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\fonts\tfm\public\pl\plbx12.tfm
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\fonts\tfm\public\pl\plr12.tfm
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\fonts\tfm\public\pl\plbx12.tfm
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\fonts\tfm\public\pl\plr7.tfm
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\fonts\tfm\public\pl\plr5.tfm
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\tex\latex\polski\omlplm.fd
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\tex\latex\polski\omlplm.fd
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\tex\latex\polski\omlplm.fd
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\fonts\tfm\public\pl\plmi10.tfm
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\fonts\tfm\public\pl\plmi7.tfm
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\fonts\tfm\public\pl\plmi5.tfm
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\tex\latex\polski\omsplsy.fd
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\tex\latex\polski\omsplsy.fd
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\tex\latex\polski\omsplsy.fd
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\fonts\tfm\public\pl\plsy10.tfm
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\fonts\tfm\public\pl\plsy7.tfm
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\fonts\tfm\public\pl\plsy5.tfm
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\tex\latex\polski\omxplex.fd
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\tex\latex\polski\omxplex.fd
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\tex\latex\polski\omxplex.fd
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\fonts\tfm\public\pl\plex10.tfm
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\fonts\tfm\public\pl\plbx10.tfm
+OUTPUT Zespół_Szkół_Łączności_schedule.pdf
+INPUT C:\Users\wojciech\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\fonts\enc\dvips\pl\plrm.enc
+INPUT Zespół_Szkół_Łączności_schedule.aux
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\fonts\type1\public\pl\plbx10.pfb
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\fonts\type1\public\pl\plbx10.pfb
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\fonts\type1\public\pl\plbx12.pfb
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\fonts\type1\public\pl\plbx12.pfb
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\fonts\type1\public\pl\plr10.pfb
+INPUT C:\Users\wojciech\AppData\Roaming\MiKTeX\fonts\type1\public\pl\plr10.pfb
