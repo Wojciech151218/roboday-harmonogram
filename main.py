@@ -3,25 +3,35 @@ import os
 from datetime import datetime
 
 def read_schedule_data(csv_file):
+    schools = []
+    headers = []
+    
     with open(csv_file, 'r', encoding='utf-8') as f:
         reader = csv.reader(f)
-        next(reader)  # Skip the first row
-        headers = next(reader)  # Get headers from second row
-        next(reader)  # Skip the "opcjonalne" row
-        schools = []
+        # Read headers (first row)
+        headers = next(reader)[1:]  # Skip first empty cell
+        
+        # Read each school's schedule
         for row in reader:
-            if row[0] and row[0] != "poza szkolni":  # Skip empty rows and "poza szkolni"
-                # Filter out events marked with 'x' and empty fields, create pairs of (event, time)
-                scheduled_events = []
-                for header, time in zip(headers[1:], row[1:]):
-                    # Only include events that are scheduled and have both header and time
-                    if header and time and time != 'x':  # Check if header is not empty
-                        scheduled_events.append((header, time))
+            if not row:  # Skip empty rows
+                continue
                 
-                schools.append({
-                    'name': row[0],
-                    'schedule': scheduled_events
-                })
+            school_name = row[0]
+            events = []
+            
+            # Process each event time for this school
+            for i, time in enumerate(row[1:], 1):
+                if time != 'x':  # Skip events marked with 'x'
+                    events.append((headers[i-1], time))
+            
+            # Sort events by time
+            events.sort(key=lambda x: x[1])
+            
+            schools.append({
+                'name': school_name,
+                'schedule': events
+            })
+    
     return headers, schools
 
 def generate_latex_document(school_name, schedule, headers):
