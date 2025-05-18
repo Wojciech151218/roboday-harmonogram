@@ -1,40 +1,41 @@
 import csv
 import os
 from datetime import datetime
+import pandas as pd
 
-def read_schedule_data(csv_file):
+def read_schedule_data(excel_file):
+    # Read Excel file, skipping first 3 rows
+    df = pd.read_excel(excel_file, skiprows=3)
+    
+    # Get event names from the first row (4th row in Excel)
+    events = df.columns[1:].tolist()  # Skip first column (school names)
+    
     schools = []
-    headers = []
     
-    with open(csv_file, 'r', encoding='utf-8') as f:
-        reader = csv.reader(f)
-        # Read headers (first row)
-        headers = next(reader)[1:]  # Skip first empty cell
+    # Process each row (school)
+    for _, row in df.iterrows():
+        school_name = row[0]  # First column contains school name
+        schedule = []
         
-        # Read each school's schedule
-        for row in reader:
-            if not row:  # Skip empty rows
-                continue
-                
-            school_name = row[0]
-            events = []
-            
-            # Process each event time for this school
-            for i, time in enumerate(row[1:], 1):
-                if time != 'x':  # Skip events marked with 'x'
-                    events.append((headers[i-1], time))
-            
-            # Sort events by time
-            events.sort(key=lambda x: x[1])
-            
-            schools.append({
-                'name': school_name,
-                'schedule': events
-            })
+        # Process each event time for this school
+        for event, time in zip(events, row[1:]):
+            # Skip if event name is 'x' or time is 'x' or NaN
+            if (str(event).lower() != 'x' and 
+                pd.notna(time) and 
+                str(time).lower() != 'x'):
+                schedule.append({
+                    'event_name': event,
+                    'time': str(time)
+                })
+        
+        schools.append({
+            'name': school_name,
+            'schedule': schedule
+        })
     
-    return headers, schools
+    return schools
 
-def generate_latex_document(school_name, schedule, headers):
+def generate_latex_document(school_name, schedule):
     # Create LaTeX document
     doc = []
     doc.append(r'\documentclass{article}')
@@ -59,8 +60,8 @@ def generate_latex_document(school_name, schedule, headers):
     doc.append(r'\hline')
     
     # Add schedule entries
-    for event, time in schedule:
-        doc.append(f'{event} & {time} \\\\')
+    for event in schedule:
+        doc.append(f'{event["event_name"]} & {event["time"]} \\\\')
         doc.append(r'\hline')
     
     doc.append(r'\end{tabular}')
@@ -75,12 +76,12 @@ def main():
         os.makedirs('output')
     
     # Read schedule data
-    headers, schools = read_schedule_data('roboday.csv')
+    schools = read_schedule_data('roboday.xlsx')
     
     # Generate LaTeX document for each school
     for school in schools:
         school_name = school['name'].split(',')[0]  # Get just the school name
-        latex_content = generate_latex_document(school_name, school['schedule'], headers)
+        latex_content = generate_latex_document(school_name, school['schedule'])    
         
         # Save LaTeX file
         filename = f'output/{school_name.replace(" ", "_")}_schedule.tex'

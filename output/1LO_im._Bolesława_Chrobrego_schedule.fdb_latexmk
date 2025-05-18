@@ -1,5 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1747573238.63705 "c:/Users/wojciech/cursor/rd/output/Technikum_komunikacji_schedule.tex" "Technikum_komunikacji_schedule.pdf" "Technikum_komunikacji_schedule" 1747573239.39282 0
+["pdflatex"] 1747591848.14863 "c:/Users/wojciech/cursor/rd/output/1LO_im._Bolesława_Chrobrego_schedule.tex" "1LO_im._Bolesława_Chrobrego_schedule.pdf" "1LO_im._Bolesława_Chrobrego_schedule" 1747591849.00291 0
+  "1LO_im._Bolesława_Chrobrego_schedule.aux" 1747591848 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "1LO_im._Bolesława_Chrobrego_schedule.tex" 1747591843 1109 b3eba0c7c9da3a41608069e9152fa80d ""
   "C:/Program Files/MiKTeX/tex/generic/iftex/iftex.sty" 1734114575 7984 7dbb9280f03c0a315425f1b4f35d43ee ""
   "C:/Program Files/MiKTeX/tex/generic/iftex/ifvtex.sty" 1734114575 1057 525c2192b5febbd8c1f662c9468335bb ""
   "C:/Program Files/MiKTeX/tex/latex/base/article.cls" 1738160243 20144 63d8bacaf52e5abf4db3bc322373e1d4 ""
@@ -34,11 +36,9 @@
   "C:/Users/wojciech/AppData/Roaming/MiKTeX/tex/latex/polski/omxplex.fd" 1630159173 1289 c085201d50568bfe8b525969526e4fd0 ""
   "C:/Users/wojciech/AppData/Roaming/MiKTeX/tex/latex/polski/ot4cmr.fd" 1630159173 2605 fe3d35a54ea9c9b798eb3aa21b9ef2f6 ""
   "C:/Users/wojciech/AppData/Roaming/MiKTeX/tex/latex/polski/polski.sty" 1630159173 13344 a993928ba746ec4e012bfd315bcc48d8 ""
-  "Technikum_komunikacji_schedule.aux" 1747573239 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "Technikum_komunikacji_schedule.tex" 1747573237 1076 e10fb579099696b6f9792b2d5ec1428a ""
-  "c:/Users/wojciech/cursor/rd/output/Technikum_komunikacji_schedule.tex" 1747573237 1076 e10fb579099696b6f9792b2d5ec1428a ""
+  "c:/Users/wojciech/cursor/rd/output/1LO_im._Bolesława_Chrobrego_schedule.tex" 1747591843 1109 b3eba0c7c9da3a41608069e9152fa80d ""
   (generated)
-  "Technikum_komunikacji_schedule.aux"
-  "Technikum_komunikacji_schedule.log"
-  "Technikum_komunikacji_schedule.pdf"
+  "1LO_im._Bolesława_Chrobrego_schedule.aux"
+  "1LO_im._Bolesława_Chrobrego_schedule.log"
+  "1LO_im._Bolesława_Chrobrego_schedule.pdf"
   (rewritten before read)
